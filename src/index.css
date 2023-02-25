@@ -1,0 +1,127 @@
+:root{
+  --main-color:#e9292a;
+  --second-color:#795548;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: var(--main-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button,input{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+input:focus{
+  outline:1px solid var(--main-color);
+}
+.container{
+  width: 60%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.header{
+  background-color: var(--main-color);
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.addCourseForm{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.addCourseForm .addCourse,
+.updateForm .updateFormButton{
+  width: 19%;
+  background-color: #4bc45d;
+  border: none;
+  color: white;
+  height:30px;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+.addCourseForm .addtext,
+.updateForm .updateFormText{
+  width: 80%;
+  border: none;
+  padding: 3px 10px;
+  height:30px;
+  background-color: #e7e7e7;
+}
+.allSkills{
+  list-style: none;
+}
+.course{
+  width: 100%;
+  margin:10px 0;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.course .skill{
+  display: flex;
+  width: 70%;
+}
+
+.course .editButton{
+  width: fit-content;
+  background-color: var(--second-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.course .deleteButton{
+  width: fit-content;
+  background-color: var(--main-color);
+  color:white;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+
+
+.updateForm{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.empty{
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+@media (max-width:768px) {
+  *{
+    font-size: 15px;
+    font-size: 12px;
+    font-weight: normal;
+
+  }
+}
