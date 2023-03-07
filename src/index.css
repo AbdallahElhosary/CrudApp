@@ -83,7 +83,7 @@ input:focus{
 }
 
 .course .editButton{
-  width: fit-content;
+  width:19%;
   background-color: var(--second-color);
   color: white;
   border: none;
@@ -94,7 +94,7 @@ input:focus{
 }
 
 .course .deleteButton{
-  width: fit-content;
+  width: 19%;
   background-color: var(--main-color);
   color:white;
   border: none;
