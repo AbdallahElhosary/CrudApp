@@ -1,6 +1,6 @@
 :root{
-  --main-color:#e9292a;
-  --second-color:#795548;
+  --main-color:#000;
+  --second-color:#009688;
 }
 *{
   padding: 0;
