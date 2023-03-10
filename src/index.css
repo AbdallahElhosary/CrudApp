@@ -1,6 +1,7 @@
 :root{
-  --main-color:#000;
-  --second-color:#009688;
+  --main-color:#009995;
+  --second-color:#0063AC;
+  --height:40px;
 }
 *{
   padding: 0;
@@ -18,110 +19,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-button,input{
+
+button,
+input{
+  outline: none;
   border: none;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
   cursor: pointer;
-
-}
-
-input:focus{
-  outline:1px solid var(--main-color);
 }
 .container{
-  width: 60%;
-  margin: 100px auto;
-  padding: 20px;
-  background-color: white;
+  width: 90%;
+  margin: auto;
+  margin-top: 200px;
+  background-color:white;
+  border-radius: 10px;
+  padding: 10px;
 }
-
 .header{
+  text-align: center;
+  color:white;
   background-color: var(--main-color);
-  color: white;
-  font-size: 30px;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
-.addCourseForm{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.addCourseForm .addCourse,
-.updateForm .updateFormButton{
-  width: 19%;
-  background-color: #4bc45d;
-  border: none;
-  color: white;
-  height:30px;
-  font-size: 15px;
-  box-sizing: border-box;
-  margin-left: 5px;
-}
-.addCourseForm .addtext,
-.updateForm .updateFormText{
-  width: 80%;
-  border: none;
-  padding: 3px 10px;
-  height:30px;
-  background-color: #e7e7e7;
-}
-.allSkills{
+ul{
+  padding: left 0 !important;
   list-style: none;
 }
 .course{
+  height: 70px;
+}
+.addCourseForm,
+.course,
+.updateForm{
   width: 100%;
-  margin:10px 0;
+  height:var(--height);
+  margin-bottom: 10px;
+}
+.addCourseForm .addtext,
+.updateFormText{
+  width: 63%;
+  height:var(--height);
+  background-color: #eee;
+  cursor: text;
+  font-size: 18px;
+  color:black;
+}
+.addCourseForm .addCourse,
+.updateFormButton{
+  width: 35%;
+  height:var(--height);
+  margin-left: 2%;
+  background-color: #124975;
+}
+.course{
   display: flex;
-  height: 30px;
-  justify-content: space-between;
   align-items: center;
 }
 .course .skill{
-  display: flex;
-  width: 70%;
+  display: block;
+  width: 64%;
+}
+.course button{
+  width:16.5% ;
+  height: var(--height);
+  margin-left: 2%;
 }
 
 .course .editButton{
-  width:19%;
-  background-color: var(--second-color);
-  color: white;
-  border: none;
-  cursor: pointer;
-  height: 100%;
-  margin-right: 5px;
-  margin-left: 5px;
+  background-color: var(--main-color);
+  
 }
 
 .course .deleteButton{
-  width: 19%;
-  background-color: var(--main-color);
-  color:white;
-  border: none;
-  cursor: pointer;
-  height: 100%;
-}
-
-
-
-.updateForm{
-  margin: 10px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-.empty{
-  text-align: center;
-  margin: 10px 0 0;
-}
-
-@media (max-width:768px) {
-  *{
-    font-size: 15px;
-    font-size: 12px;
-    font-weight: normal;
-
-  }
+  background-color: var(--second-color);
 }
